@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "MuddySpud.Abacus": {
+      "commandName": "Project",
+      "commandLineArgs": "analyze -s \"C:\\Code4\\aspnetcore-main\" -f json -o \"E:\\Delete\\ApplicationInspector\\output.json\" -i true -r \"C:\\GitHub\\Abacus\\MuddySpud\\MuddySpud.Abacus\\CodemologieRules\" -u false --w \"**.cs\" --F 0"
+    }
+  }
+}

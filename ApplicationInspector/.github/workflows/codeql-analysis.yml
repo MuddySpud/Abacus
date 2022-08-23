@@ -1,0 +1,53 @@
+name: "CodeQL"
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: '0 7 * * 5'
+
+jobs:
+  CodeQL-Build:
+
+    strategy:
+      fail-fast: false
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+      
+    - name: Initialize CodeQL
+      uses: github/codeql-action/init@v1
+      with:
+        languages: javascript, csharp
+
+    - name: Build Application Inspector Commands
+      run: |
+         dotnet restore
+         dotnet build AppInspector.Commands.csproj -c Release
+      working-directory: ./AppInspector
+      
+    - name: Build Application Inspector CLI
+      run: |
+         dotnet restore
+         dotnet build AppInspector.CLI.csproj -c Release
+      working-directory: ./AppInspector.CLI
+
+    - name: Build RulesEngine
+      run: |
+         dotnet restore
+         dotnet build AppInspector.RulesEngine.csproj -c Release
+      working-directory: ./RulesEngine
+
+    - name: Build Tests
+      run: |
+         dotnet restore
+         dotnet build UnitTest.Commands.csproj
+      working-directory: ./UnitTest.Commands
+
+    - name: Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@v1

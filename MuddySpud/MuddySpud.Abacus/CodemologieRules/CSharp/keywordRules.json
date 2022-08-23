@@ -1,0 +1,1619 @@
+[
+
+  {
+    "name": "C-m: CSharp abstract",
+    "id": "CY00001100",
+    "description": "C-m: CSharp abstract",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.abstract"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "abstract",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp as",
+    "id": "CY00001200",
+    "description": "C-m: CSharp as",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.as"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "as",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp base",
+    "id": "CY00001300",
+    "description": "C-m: CSharp base",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.base"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "base",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp bool",
+    "id": "CY00001400",
+    "description": "C-m: CSharp bool",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.bool"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "bool",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp break",
+    "id": "CY00001500",
+    "description": "C-m: CSharp break",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.break"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "break",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp byte",
+    "id": "CY00001600",
+    "description": "C-m: CSharp byte",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.byte"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "byte",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp case",
+    "id": "CY00001700",
+    "description": "C-m: CSharp case",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.case"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "case",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp catch",
+    "id": "CY00001800",
+    "description": "C-m: CSharp catch",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.catch"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "catch",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp char",
+    "id": "CY00001900",
+    "description": "C-m: CSharp char",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.char"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "char",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp checked",
+    "id": "CY00002000",
+    "description": "C-m: CSharp checked",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.checked"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "checked",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp class",
+    "id": "CY00002100",
+    "description": "C-m: CSharp class",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.class"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "class",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp const",
+    "id": "CY00002200",
+    "description": "C-m: CSharp const",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.const"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "const",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp continue",
+    "id": "CY00002300",
+    "description": "C-m: CSharp continue",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.continue"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "continue",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp decimal",
+    "id": "CY00002400",
+    "description": "C-m: CSharp decimal",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.decimal"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "decimal",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp default",
+    "id": "CY00002500",
+    "description": "C-m: CSharp default",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.default"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "default",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp delegate",
+    "id": "CY00002600",
+    "description": "C-m: CSharp delegate",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.delegate"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "delegate",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp do",
+    "id": "CY00002700",
+    "description": "C-m: CSharp do",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.do"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "do",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp double",
+    "id": "CY00002800",
+    "description": "C-m: CSharp double",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.double"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "double",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp else",
+    "id": "CY00002900",
+    "description": "C-m: CSharp else",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.else"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "else",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp enum",
+    "id": "CY00003000",
+    "description": "C-m: CSharp enum",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.enum"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "enum",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp event",
+    "id": "CY00003100",
+    "description": "C-m: CSharp event",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.event"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "event",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp explicit",
+    "id": "CY00003200",
+    "description": "C-m: CSharp explicit",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.explicit"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "explicit",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp extern",
+    "id": "CY00003300",
+    "description": "C-m: CSharp extern",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.extern"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "extern",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp false",
+    "id": "CY00003400",
+    "description": "C-m: CSharp false",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.false"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "false",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp finally",
+    "id": "CY00003500",
+    "description": "C-m: CSharp finally",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.finally"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "finally",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp fixed",
+    "id": "CY00003600",
+    "description": "C-m: CSharp fixed",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.fixed"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "fixed",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp float",
+    "id": "CY00003700",
+    "description": "C-m: CSharp float",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.float"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "float",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp for",
+    "id": "CY00003800",
+    "description": "C-m: CSharp for",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.for"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "for",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp foreach",
+    "id": "CY00003900",
+    "description": "C-m: CSharp foreach",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.foreach"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "foreach",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp goto",
+    "id": "CY00004000",
+    "description": "C-m: CSharp goto",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.goto"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "goto",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp if",
+    "id": "CY00004100",
+    "description": "C-m: CSharp if",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.if"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "if",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp implicit",
+    "id": "CY00004200",
+    "description": "C-m: CSharp implicit",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.implicit"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "implicit",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp in",
+    "id": "CY00004300",
+    "description": "C-m: CSharp in",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.in"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "in",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp int",
+    "id": "CY00004400",
+    "description": "C-m: CSharp int",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.int"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "int",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp interface",
+    "id": "CY00004500",
+    "description": "C-m: CSharp interface",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.interface"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "interface",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp internal",
+    "id": "CY00004600",
+    "description": "C-m: CSharp internal",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.internal"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "internal",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp is",
+    "id": "CY00004700",
+    "description": "C-m: CSharp is",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.is"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "is",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp lock",
+    "id": "CY00004800",
+    "description": "C-m: CSharp lock",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.lock"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "lock",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp long",
+    "id": "CY00004900",
+    "description": "C-m: CSharp long",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.long"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "long",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp namespace",
+    "id": "CY00005000",
+    "description": "C-m: CSharp namespace",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.namespace"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "namespace",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp new",
+    "id": "CY00005100",
+    "description": "C-m: CSharp new",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.new"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "new",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp null",
+    "id": "CY00005200",
+    "description": "C-m: CSharp null",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.null"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "null",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp object",
+    "id": "CY00005300",
+    "description": "C-m: CSharp object",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.object"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "object",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp operator",
+    "id": "CY00005400",
+    "description": "C-m: CSharp operator",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.operator"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "operator",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp out",
+    "id": "CY00005500",
+    "description": "C-m: CSharp out",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.out"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "out",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp override",
+    "id": "CY00005600",
+    "description": "C-m: CSharp override",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.override"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "override",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp params",
+    "id": "CY00005700",
+    "description": "C-m: CSharp params",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.params"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "params",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp private",
+    "id": "CY00005800",
+    "description": "C-m: CSharp private",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.private"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "private",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp protected",
+    "id": "CY00005900",
+    "description": "C-m: CSharp protected",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.protected"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "protected",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp public",
+    "id": "CY00006000",
+    "description": "C-m: CSharp public",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.public"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "public",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp readonly",
+    "id": "CY00006100",
+    "description": "C-m: CSharp readonly",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.readonly"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "readonly",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp ref",
+    "id": "CY00006200",
+    "description": "C-m: CSharp ref",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.ref"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "ref",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp return",
+    "id": "CY00006300",
+    "description": "C-m: CSharp return",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.return"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "return",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp sbyte",
+    "id": "CY00006400",
+    "description": "C-m: CSharp sbyte",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.sbyte"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "sbyte",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp sealed",
+    "id": "CY00006500",
+    "description": "C-m: CSharp sealed",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.sealed"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "sealed",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp short",
+    "id": "CY00006600",
+    "description": "C-m: CSharp short",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.short"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "short",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp sizeof",
+    "id": "CY00006700",
+    "description": "C-m: CSharp sizeof",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.sizeof"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "sizeof",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp stackalloc",
+    "id": "CY00006800",
+    "description": "C-m: CSharp stackalloc",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.stackalloc"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "stackalloc",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp static",
+    "id": "CY00006900",
+    "description": "C-m: CSharp static",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.static"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "static",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp string",
+    "id": "CY00007000",
+    "description": "C-m: CSharp string",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.string"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "string",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp struct",
+    "id": "CY00007100",
+    "description": "C-m: CSharp struct",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.struct"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "struct",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp switch",
+    "id": "CY00007200",
+    "description": "C-m: CSharp switch",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.switch"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "switch",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp this",
+    "id": "CY00007300",
+    "description": "C-m: CSharp this",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.this"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "this",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp throw",
+    "id": "CY00007400",
+    "description": "C-m: CSharp throw",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.throw"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "throw",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp true",
+    "id": "CY00007500",
+    "description": "C-m: CSharp true",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.true"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "true",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp try",
+    "id": "CY00007600",
+    "description": "C-m: CSharp try",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.try"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "try",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp typeof",
+    "id": "CY00007700",
+    "description": "C-m: CSharp typeof",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.typeof"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "typeof",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp uint",
+    "id": "CY00007800",
+    "description": "C-m: CSharp uint",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.uint"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "uint",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp ulong",
+    "id": "CY00007900",
+    "description": "C-m: CSharp ulong",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.ulong"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "ulong",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp unchecked",
+    "id": "CY00008000",
+    "description": "C-m: CSharp unchecked",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.unchecked"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "unchecked",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp unsafe",
+    "id": "CY00008100",
+    "description": "C-m: CSharp unsafe",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.unsafe"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "unsafe",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp ushort",
+    "id": "CY00008200",
+    "description": "C-m: CSharp ushort",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.ushort"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "ushort",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp using",
+    "id": "CY00008300",
+    "description": "C-m: CSharp using",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.using"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "using",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp virtual",
+    "id": "CY00008400",
+    "description": "C-m: CSharp virtual",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.virtual"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "virtual",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp void",
+    "id": "CY00008500",
+    "description": "C-m: CSharp void",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.void"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "void",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp volatile",
+    "id": "CY00008600",
+    "description": "C-m: CSharp volatile",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.volatile"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "volatile",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+
+  {
+    "name": "C-m: CSharp while",
+    "id": "CY00008700",
+    "description": "C-m: CSharp while",
+    "applies_to": [ "csharp" ],
+    "tags": [
+      "C-m.Code.CSharp.while"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "while",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "medium",
+        "_comment": ""
+      }
+    ]
+  },
+]

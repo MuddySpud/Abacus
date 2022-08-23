@@ -1,0 +1,23 @@
+[
+  {
+    "name": "C-m: Logging Call",
+    "id": "AI026100",
+    "description": "Logging Call",
+    "tags": [
+      "C-m.Code.Logging.Call"
+    ],
+    "severity": "moderate",
+    "_comment": "",
+    "patterns": [
+      {
+        "pattern": "log|logger",
+        "type": "RegexWord",
+        "scopes": [ "code" ],
+        "confidence": "high",
+        "modifiers": [ "i" ],
+        "_comment": "Check if a _logger and _log are caught too..."
+      }
+    ]
+  }
+
+]

@@ -1,0 +1,87 @@
+﻿[
+  {
+    "language": [
+      "c",
+      "cpp",
+      "csharp",
+      "coffeescript",
+      "fsharp",
+      "go",
+      "groovy",
+      "jade",
+      "objective-C",
+      "rust",
+      "swift",
+      "javascript",
+      "java",
+      "typescript",
+      "php"
+    ],
+    "statements": [
+      {
+        "name": "SemiColon",
+        "type": "Code",
+        "close": ";",
+        "searchType": "text",
+        "enabled": true
+      }
+    ],
+    "mask": {
+      "boundaries": [
+        "Curly"
+      ],
+      "enabled": true,
+      "facets": [
+        {
+          "name": "switch expression",
+          "enabled": true,
+          "blockType": "Code",
+          "patterns": [
+            {
+              "pattern": "switch\\s*{"
+            }
+          ]
+        }
+      ]
+    },
+    "boundaries": [
+      {
+        "name": "Curly",
+        "type": "Code",
+        "open": "{",
+        "close": "}",
+        "searchType": "text",
+        "explicitClose": true
+      },
+      {
+        "name": "Lambda",
+        "type": "Code",
+        "open": "=>",
+        "close": ";",
+        "searchType": "text",
+        "explicitClose": false
+      },
+      {
+        "name": "Round",
+        "type": "Parameter",
+        "open": "(",
+        "close": ")",
+        "searchType": "text",
+        "explicitClose": true
+      },
+      {
+        "name": "Angled",
+        "type": "Generics",
+        "open": "<",
+        "close": ">",
+        "searchType": "text",
+        "explicitClose": true
+      }
+    ],
+    "enabledNames": [
+      "Curly",
+      "Lambda",
+      "Round"
+    ]
+  }
+]

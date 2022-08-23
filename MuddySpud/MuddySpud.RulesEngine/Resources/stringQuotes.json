@@ -1,0 +1,29 @@
+﻿[
+  {
+    "language": [
+      "csharp"
+    ],
+    "quote": "\"",
+    "characterEscape": {
+      "escape": "\\",
+      "location": "pre"
+    },
+    "phrasePrefix": "@",
+    "phraseCharacterEscape": {
+      "escape": "\"",
+      "location": "post"
+    },
+    "formatPhrasePrefix": "$",
+    "formatPrefix": "{",
+    "formatPrefixEscape": {
+      "escape": "{",
+      "location": "post"
+    },
+    "formatSufffix": "}",
+    "formatSufffixEscape": {
+      "escape": "}",
+      "location": "post"
+    },
+    "useFormatPrefixEscapeAsDefault": false
+  }
+]

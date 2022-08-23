@@ -1,0 +1,566 @@
+﻿[
+  {
+    "language": [
+      "csharp"
+    ],
+    "type": "ClassMethodStructure",
+    "nameJoiner": ".",
+    "components": [
+      {
+        "name": "namespace",
+        "id": "CY1000001",
+        "description": "C-m: namespace",
+        "enabled": true,
+        "qualifiesName": true,
+        "blockType": "Code",
+        "printMetrics": true,
+        "parents": [
+          "",
+          "namespace"
+        ],
+        "patterns": [
+          {
+            "pattern": "(?<signature>(?<type>(namespace))\\s+(?<namespace>([A-Za-z_][A-Za-z_0-9.]*)))\\s*[^;]\\s*{"
+          }
+        ]
+      },
+      {
+        "name": "interface",
+        "id": "CY1000002",
+        "description": "C-m: interface",
+        "enabled": true,
+        "blockType": "Code",
+        "printMetrics": true,
+        "parents": [
+          "",
+          "namespace",
+          "class",
+          "struct",
+          "record"
+        ],
+        "patterns": [
+          {
+            "pattern": "(?<signature>(\\b((public)|(internal)|(private)|(protected))\\s+)?(\\b((internal)|(private)|(protected))\\s+)?((?<partial>partial)\\s+)?(?<type>(interface))\\s+(?<interface>([A-Za-z_][A-Za-z_0-9]*(<[A-Za-z_0-9,\\s]*>)?)))\\s*[^;](:\\s*([A-Za-z_][A-Za-z_0-9]*(<[A-Za-z_0-9,\\s]*>)?))*\\s*{"
+          }
+        ]
+      },
+      {
+        "name": "class",
+        "id": "CY1000003",
+        "description": "C-m: class",
+        "enabled": true,
+        "qualifiesName": true,
+        "blockType": "Code",
+        "printMetrics": true,
+        "parents": [
+          "",
+          "namespace",
+          "class",
+          "struct",
+          "record"
+        ],
+        "patterns": [
+          {
+            "pattern": "(?<signature>(?<keywords>(\\b((public)|(internal)|(private)|(protected))\\s+)?(\\b((internal)|(private)|(protected))\\s+)?(((abstract)|(sealed)|(static)|(readonly)|(unsafe))\\s+){0,4})((?<partial>partial)\\s+)?(?<type>(class))\\s+(?<class>([A-Za-z_][A-Za-z_0-9]*\\s*(<[A-Za-z_0-9,\\s]*>)?)))\\s*[A-Za-z_0-9<>.:,\\(\\)\\s]*{"
+          }
+        ],
+        "units": [
+          {
+            "name": "destructor",
+            "enabled": true,
+            "blockType": "Code",
+            "printMetrics": true,
+            "patterns": [
+              {
+                "pattern": "(?<signature>((?<destructor>(~|*|CLASS|*|))\\s*\\(\\s*[A-Za-z_0-9\\s,<>\\=\"\\(\\)]*\\)))\\s*[^;]\\s*((=>)|{)",
+                "reject": "\\=\\="
+              }
+            ]
+          },
+          {
+            "name": "constructor",
+            "enabled": true,
+            "blockType": "Code",
+            "printMetrics": true,
+            "patterns": [
+              {
+                "pattern": "(?<signature>(\\b((public)|(internal)|(private)|(protected))\\s+)?(\\b((internal)|(private)|(protected))\\s+)?(((static)|(unsafe))\\s+){0,2}(~?)(?<constructor>(|*|CLASS|*|))\\s*\\(\\s*[A-Za-z_0-9\\s,<>\\=\"\\(\\)(\\[\\s*\\])]*\\))\\s*(?<base>(:\\s*base\\s*\\(\\s*[A-Za-z0-9\\s,.\\(\\)\\[\\]]*\\)))?\\s*((=>)|{)",
+                "reject": "(\\=\\=)|~"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "struct",
+        "id": "CY1000004",
+        "description": "C-m: struct",
+        "enabled": true,
+        "qualifiesName": true,
+        "blockType": "Code",
+        "printMetrics": true,
+        "parents": [
+          "",
+          "namespace",
+          "class",
+          "struct",
+          "record"
+        ],
+        "patterns": [
+          {
+            "pattern": "(?<signature>(?<keywords>(\\b((public)|(internal)|(private)|(protected))\\s+)?(\\b((internal)|(private)|(protected))\\s+)?(((abstract)|(sealed)|(static)|(readonly)|(unsafe))\\s+){0,4})((?<partial>partial)\\s+)?(?<type>(struct))\\s+(?<struct>([A-Za-z_][A-Za-z_0-9]*\\s*(<[A-Za-z_0-9,\\s]*>)?)))\\s*[A-Za-z_0-9<>.:,\\(\\)\\s]*{"
+          }
+        ],
+        "units": [
+          {
+            "name": "destructor",
+            "enabled": true,
+            "blockType": "Code",
+            "printMetrics": true,
+            "patterns": [
+              {
+                "pattern": "(?<signature>((?<destructor>(~|*|STRUCT|*|))\\s*\\(\\s*[A-Za-z_0-9\\s,<>\\=\"\\(\\)]*\\)))\\s*[^;]\\s*((=>)|{)",
+                "reject": "\\=\\="
+              }
+            ]
+          },
+          {
+            "name": "constructor",
+            "enabled": true,
+            "blockType": "Code",
+            "printMetrics": true,
+            "patterns": [
+              {
+                "pattern": "(?<signature>(\\b((public)|(internal)|(private)|(protected))\\s+)?(\\b((internal)|(private)|(protected))\\s+)?(((static)|(unsafe))\\s+){0,2}(~?)(?<constructor>(|*|STRUCT|*|))\\s*\\(\\s*[A-Za-z_0-9\\s,<>\\=\"\\(\\)(\\[\\s*\\])]*\\))\\s*(?<base>(:\\s*base\\s*\\(\\s*[A-Za-z0-9\\s,.\\(\\)\\[\\]]*\\)))?\\s*((=>)|{)",
+                "reject": "(\\=\\=)|~"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "record",
+        "id": "CY1000005",
+        "description": "C-m: record",
+        "enabled": true,
+        "qualifiesName": true,
+        "blockType": "Code",
+        "printMetrics": true,
+        "parents": [
+          "",
+          "namespace",
+          "class",
+          "struct",
+          "record"
+        ],
+        "patterns": [
+          {
+            "pattern": "(?<signature>(?<keywords>(\\b((public)|(internal)|(private)|(protected))\\s+)?(\\b((internal)|(private)|(protected))\\s+)?(((abstract)|(async)|(extern)|(override)|(sealed)|(static)|(unsafe)|(new)|(virtual)|(volatile))\\s+){0,5})((?<partial>partial)\\s+)?(?<type>(record)\\s+)(?<record>[A-Za-z_][A-Za-z_0-9]*\\s*(<[A-Za-z_0-9,\\s]*>)?)\\s*(?<params>\\(\\s*[A-Za-z_0-9\\s,<>\\=\"\\(\\)(\\[\\s*\\])]*\\))\\s*)[A-Za-z_0-9<>.:,\\(\\)\\[\\]\\s]*\\s*{",
+            "reject": "\\=\\="
+          }
+        ],
+        "units": [
+          {
+            "name": "destructor",
+            "enabled": true,
+            "blockType": "Code",
+            "printMetrics": true,
+            "patterns": [
+              {
+                "pattern": "(?<signature>((?<destructor>(~|*|RECORD|*|))\\s*\\(\\s*[A-Za-z_0-9\\s,<>\\=\"\\(\\)]*\\)))\\s*[^;]\\s*((=>)|{)",
+                "reject": "\\=\\="
+              }
+            ]
+          },
+          {
+            "name": "constructor",
+            "enabled": true,
+            "blockType": "Code",
+            "printMetrics": true,
+            "patterns": [
+              {
+                "pattern": "(?<signature>(\\b((public)|(internal)|(private)|(protected))\\s+)?(\\b((internal)|(private)|(protected))\\s+)?(((static)|(unsafe))\\s+){0,2}(~?)(?<constructor>(|*|RECORD|*|))\\s*\\(\\s*[A-Za-z_0-9\\s,<>\\=\"\\(\\)(\\[\\s*\\])]*\\))\\s*(?<base>(:\\s*base\\s*\\(\\s*[A-Za-z0-9\\s,.\\(\\)\\[\\]]*\\)))?\\s*((=>)|{)",
+                "reject": "(\\=\\=)|~"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "indexer",
+        "id": "CY10000008",
+        "description": "C-m: indexer",
+        "enabled": true,
+        "blockType": "Code",
+        "printMetrics": true,
+        "parents": [
+          "class",
+          "record",
+          "struct"
+        ],
+        "patterns": [
+          {
+            "pattern": "(?<signature>(?<keywords>(\\b((public)|(internal)|(private)|(protected))\\s+)?(\\b((internal)|(private)|(protected))\\s+)?(((abstract)|(async)|(extern)|(override)|(sealed)|(static)|(unsafe)|(new)|(virtual)|(volatile))\\s+){0,5})(?<returnValue>(([A-Za-z_][A-Za-z_0-9]*\\s*(<[A-Za-z_0-9\\s,<>\\=\"\\(\\)(\\[\\s*\\])]+>)?)|(\\([A-Za-z_0-9\\s,<>\\=\"\\(\\)(\\[\\s*\\])]+\\)))\\s+)(?<indexer>this)\\s*(?<params>\\[\\s*[A-Za-z_0-9\\s,<>\\=\"\\(\\)]*\\]))\\s*[^;]\\s*(({(?=(\\s*(\\b(public|internal|private|protected)\\s+)?(\\b(internal|private|protected)\\s+)?\\s*(get|set|init\\s*))))|(=>))",
+            "reject": "\\=\\="
+          }
+        ]
+      },
+      {
+        "name": "event",
+        "id": "CY10000009",
+        "description": "C-m: event",
+        "enabled": true,
+        "blockType": "Code",
+        "printMetrics": true,
+        "parents": [
+          "class",
+          "record",
+          "struct"
+        ],
+        "patterns": [
+          {
+            "pattern": "(?<signature>(?<keywords>(\\b((public)|(internal)|(private)|(protected))\\s+)?(\\b((internal)|(private)|(protected))\\s+)?(((abstract)|(extern)|(override)|(sealed)|(static)|(unsafe)|(new)|(virtual)|(volatile))\\s+){0,5})event\\s+(?<returnValue>(([A-Za-z_][A-Za-z_0-9]*\\s*(<[A-Za-z_0-9\\s,<>\\=\"\\(\\)]+>)?)|(\\([A-Za-z_0-9\\s,<>\\=\"\\(\\)]+\\)))\\s+)(?<event>[A-Za-z_][A-Za-z_0-9]*(\\s*<[A-Za-z_0-9,\\s]*>)?))\\s*{",
+            "reject": "\\=\\="
+          }
+        ]
+      },
+      {
+        "name": "operator",
+        "id": "CY10000010",
+        "description": "C-m: operator",
+        "enabled": true,
+        "blockType": "Code",
+        "printMetrics": true,
+        "parents": [
+          "class",
+          "record",
+          "struct"
+        ],
+        "patterns": [
+          {
+            "pattern": "(?<signature>(?<keywords>(\\b((public)|(internal)|(private)|(protected))\\s+)?(\\b((internal)|(private)|(protected))\\s+)?(((abstract)|(extern)|(override)|(sealed)|(static)|(unsafe)|(new)|(virtual)|(volatile))\\s+){0,5})(?<returnValue>(([A-Za-z_][A-Za-z_0-9]*\\s*(<[A-Za-z_0-9\\s,<>\\=\"\\(\\)]+>)?)|(\\([A-Za-z_0-9\\s,<>\\=\"\\(\\)]+\\)))\\s+)(operator\\s+)(?<operator>((\\+)|(-)|(!)|(~)|(\\+\\+)|(--)|(true)|(false)|(\\*)|(/)|(%)|(\\&)|(\\|)|(\\^)|(<<)|(==)|(\\!=)|(>)|(<)|(>=)|(<=))\\s*)(?<params>\\(\\s*[A-Za-z_0-9\\s,<>\\=\"\\(\\)(\\[\\s*\\])]+\\)))\\s*[^;]\\s*((=>)|{)",
+            "reject": "\\=\\="
+          },
+          {
+            "pattern": "(?<signature>(?<keywords>(\\b((public)|(internal)|(private)|(protected))\\s+)?(\\b((internal)|(private)|(protected))\\s+)?(((abstract)|(extern)|(override)|(sealed)|(static)|(unsafe)|(new)|(virtual)|(volatile))\\s+){0,5})((explicit)|(implicit))\\s+(operator\\s+)(?<operator>(([A-Za-z_][A-Za-z_0-9]*\\s*(<[A-Za-z_0-9\\s,<>\\=\"\\(\\)]+>)?)|(\\([A-Za-z_0-9\\s,<>\\=\"\\(\\)]+\\)))\\s*)(?<params>\\(\\s*[A-Za-z_0-9\\s,<>\\=\"\\(\\)(\\[\\s*\\])]+\\)))\\s*[^;]\\s*((=>)|{)",
+            "reject": "\\=\\="
+          }
+        ]
+      },
+      {
+        "name": "method",
+        "id": "CY10000006",
+        "description": "C-m: method",
+        "enabled": true,
+        "blockType": "Code",
+        "printMetrics": true,
+        "parents": [
+          "class",
+          "record",
+          "struct"
+        ],
+        "patterns": [
+          {
+            "pattern": "(?<signature>(?<keywords>(\\b((public)|(internal)|(private)|(protected))\\s+)?(\\b((internal)|(private)|(protected))\\s+)?(((abstract)|(async)|(extern)|(override)|(sealed)|(static)|(unsafe)|(new)|(virtual)|(volatile))\\s+){0,5})((?<partial>partial)\\s+)?(?<returnValue>(([A-Za-z][A-Za-z0-9]*\\s*(<[A-Za-z0-9\\s,<>\\=\"\\(\\)(\\[\\s*\\])]+>)?)|(\\([A-Za-z0-9\\s,<>\\=\"\\(\\)(\\[\\s*\\])]+\\)))\\s+)(?<method>[A-Za-z][A-Za-z0-9]*\\s*(<[A-Za-z_0-9,\\s]*>)?)\\s*(?<params>\\(\\s*[A-Za-z0-9\\s,<>\\=\"\\(\\)(\\[\\s*\\])]*\\)))\\s*[^;]\\s*((=>)|{)",
+            "reject": "\\=\\="
+          }
+        ],
+        "units": [
+          {
+            "name": "recursion",
+            "enabled": true,
+            "blockType": "Parameter",
+            "patterns": [
+              {
+                "pattern": "(?<recursion>(|*|METHOD|*|))\\s*\\("
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "property",
+        "id": "CY10000007",
+        "description": "C-m: property",
+        "enabled": true,
+        "blockType": "Code",
+        "printMetrics": true,
+        "parents": [
+          "class",
+          "record",
+          "struct"
+        ],
+        "patterns": [
+          {
+            "pattern": "(?<signature>(?<keywords>(\\b((public)|(internal)|(private)|(protected))\\s+)?(\\b((internal)|(private)|(protected))\\s+)?(((abstract)|(extern)|(override)|(sealed)|(static)|(unsafe)|(new)|(virtual)|(volatile))\\s+){0,5})(?<returnValue>(([A-Za-z][A-Za-z0-9]*\\s*(<[A-Za-z0-9\\s,<>\\=\"\\(\\)]+>)?)|(\\([A-Za-z0-9\\s,<>\\=\"\\(\\)]+\\)))\\s+)(?<property>[A-Za-z][A-Za-z0-9]*(\\s*<[A-Za-z_0-9,\\s]*>)?))\\s*(({(?=(\\s*(\\b((public)|(internal)|(private)|(protected))\\s+)?(\\b((internal)|(private)|(protected))\\s+)?\\s*((get)|(set)|(init)\\s*))))|(=>))",
+            "reject": "\\=\\="
+          }
+        ]
+      }
+    ],
+    "groups": [
+      {
+        "name": "for ()",
+        "id": "CY10000008",
+        "type": "Loop",
+        "keyword": "for",
+        "blocks": [
+          "Parameter",
+          "Code"
+        ],
+        "enabled": true
+      },
+      {
+        "name": "While ()",
+        "id": "CY10000009",
+        "type": "Loop",
+        "keyword": "while",
+        "blocks": [
+          "Parameter",
+          "Code"
+        ],
+        "enabled": true
+      },
+      {
+        "name": "foreach ()",
+        "id": "CY10000010",
+        "type": "Loop",
+        "keyword": "foreach",
+        "blocks": [
+          "Parameter",
+          "Code"
+        ],
+        "enabled": true
+      },
+      {
+        "name": "do while ()",
+        "id": "CY10000011",
+        "type": "Loop",
+        "keyword": "do",
+        "blocks": [
+          "Code"
+        ],
+        "enabled": true
+      },
+      {
+        "name": "else if ()",
+        "id": "CY10000012",
+        "type": "Branch",
+        "keyword": "else if",
+        "blocks": [
+          "Parameter",
+          "Code"
+        ],
+        "gang": {
+          "name": "ifElse",
+          "type": "multi",
+          "position": 2
+        },
+        "enabled": true
+      },
+      {
+        "name": "if ()",
+        "id": "CY10000013",
+        "type": "Branch",
+        "keyword": "(?<!else\\s+)if",
+        "blocks": [
+          "Parameter",
+          "Code"
+        ],
+        "gang": {
+          "name": "ifElse",
+          "type": "single",
+          "position": 1
+        },
+        "enabled": true
+      },
+      {
+        "name": "else",
+        "id": "CY10000014",
+        "type": "Branch",
+        "keyword": "else",
+        "blocks": [
+          "Code"
+        ],
+        "gang": {
+          "name": "ifElse",
+          "type": "single",
+          "position": 3
+        },
+        "enabled": true
+      },
+      {
+        "name": "switch ()",
+        "id": "CY10000009",
+        "type": "Branch",
+        "keyword": "switch",
+        "blocks": [
+          "Parameter",
+          "Code"
+        ],
+        "units": [
+          {
+            "name": "case",
+            "searchType": "regex",
+            "type": "group",
+            "patterns": [
+              {
+                "pattern": "(case)\\s*([A-Za-z_0-9<>.,\\<\\>\\(\\)\\s\\=\\|\\!\\+\\-\\*\\^\\%\\&\\?\\~\\[\\]]+):"
+              }
+            ]
+          },
+          {
+            "name": "default",
+            "searchType": "regex",
+            "type": "group",
+            "patterns": [
+              {
+                "pattern": "(default)\\s*:"
+              }
+            ]
+          }
+        ],
+        "enabled": true
+      },
+      {
+        "name": "switch expression",
+        "id": "CY10000015",
+        "type": "Branch",
+        "keyword": "switch",
+        "blocks": [
+          "Code"
+        ],
+        "enabled": true
+      }
+    ],
+    "unmasking": [
+      {
+        "groupName": "switch expression",
+        "actionName": "unMaskSwitchExpression",
+        "enabled": true
+      }
+    ],
+    "unitsOfWork": {
+      "nonBlockPatterns": [
+        {
+          "pattern": "\\<\\<\\="
+        },
+        {
+          "pattern": "\\>\\>\\="
+        },
+        {
+          "pattern": "\\?\\?\\="
+        },
+        {
+          "pattern": "\\?\\?"
+        },
+        {
+          "pattern": "\\>\\>"
+        },
+        {
+          "pattern": "\\<\\<"
+        },
+        {
+          "pattern": "\\<\\="
+        },
+        {
+          "pattern": "\\>\\="
+        },
+        {
+          "pattern": "\\.\\."
+        },
+        {
+          "pattern": "\\?\\."
+        },
+        {
+          "pattern": "\\+\\+"
+        },
+        {
+          "pattern": "\\-\\-"
+        },
+        {
+          "pattern": "\\=\\="
+        },
+        {
+          "pattern": "\\!\\="
+        },
+        {
+          "pattern": "\\|\\|"
+        },
+        {
+          "pattern": "\\-\\="
+        },
+        {
+          "pattern": "\\+\\="
+        },
+        {
+          "pattern": "\\*\\="
+        },
+        {
+          "pattern": "\\/\\="
+        },
+        {
+          "pattern": "\\%\\="
+        },
+        {
+          "pattern": "\\&\\="
+        },
+        {
+          "pattern": "\\|\\="
+        },
+        {
+          "pattern": "\\^\\="
+        },
+        {
+          "pattern": "\\=\\>"
+        },
+        {
+          "pattern": "\\^"
+        },
+        {
+          "pattern": "\\|"
+        },
+        {
+          "pattern": "\\&"
+        },
+        {
+          "pattern": "\\!"
+        },
+        {
+          "pattern": "\\="
+        },
+        {
+          "pattern": "\\."
+        },
+        {
+          "pattern": "\\:"
+        },
+        {
+          "pattern": "\\*"
+        },
+        {
+          "pattern": "\\+"
+        },
+        {
+          "pattern": "\\-"
+        },
+        {
+          "pattern": "\\/"
+        },
+        {
+          "pattern": "\\~"
+        },
+        {
+          "pattern": "\\%"
+        },
+        {
+          "pattern": "\\>"
+        },
+        {
+          "pattern": "\\<"
+        }
+      ],
+      "enabled": true
+    }
+  }
+]

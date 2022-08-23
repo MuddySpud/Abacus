@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <ApplicationIcon />
+    <StartupObject />
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\codeBlocks.json" />
+    <None Remove="Resources\comments.json" />
+    <None Remove="Resources\languages.json" />
+    <None Remove="Resources\preProcessors.json" />
+    <None Remove="Resources\stringQuotes.json" />
+    <None Remove="Resources\structure.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\codeBlocks.json" />
+    <EmbeddedResource Include="Resources\comments.json" />
+    <EmbeddedResource Include="Resources\languages.json" />
+    <EmbeddedResource Include="Resources\preProcessors.json" />
+    <EmbeddedResource Include="Resources\stringQuotes.json" />
+    <EmbeddedResource Include="Resources\structure.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ApplicationInspector\AppInspector\AppInspector.Commands.csproj" />
+    <ProjectReference Include="..\..\ApplicationInspector\RulesEngine\AppInspector.RulesEngine.csproj" />
+  </ItemGroup>
+
+</Project>
